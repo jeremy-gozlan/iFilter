@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iFilter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eKJ-lt-d9A">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HID-tU-YhJ">
+                                        <rect key="frame" x="159" y="761" width="93" height="93"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Segment">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="captureImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h4I-cc-hSj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRQ-he-Rj9">
+                                        <rect key="frame" x="358" y="834" width="36" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="O4u-Ed-cfs"/>
+                                            <constraint firstAttribute="width" secondItem="PRQ-he-Rj9" secondAttribute="height" multiplier="1:1" id="bhI-wy-9eM"/>
+                                            <constraint firstAttribute="width" constant="36" id="j48-zX-nFN"/>
+                                        </constraints>
+                                        <state key="normal" image="album">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showLibrary:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qrn-Rb-wIN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8u-8y-McD">
+                                        <rect key="frame" x="368" y="72" width="31" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="31" id="5lr-kC-ZmH"/>
+                                            <constraint firstAttribute="width" secondItem="B8u-8y-McD" secondAttribute="height" multiplier="1:1" id="h8X-A9-VoH"/>
+                                            <constraint firstAttribute="height" constant="31" id="jLp-cW-FVp"/>
+                                        </constraints>
+                                        <state key="normal" image="delete"/>
+                                        <connections>
+                                            <action selector="deleteCurrentImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UXH-hn-zgf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="PRQ-he-Rj9" secondAttribute="bottom" constant="26" id="JF0-dA-NI4"/>
+                                    <constraint firstAttribute="trailing" secondItem="PRQ-he-Rj9" secondAttribute="trailing" constant="20" id="UTP-lP-9R9"/>
+                                    <constraint firstItem="B8u-8y-McD" firstAttribute="top" secondItem="eKJ-lt-d9A" secondAttribute="top" constant="72" id="iBl-6o-jnq"/>
+                                    <constraint firstAttribute="trailing" secondItem="B8u-8y-McD" secondAttribute="trailing" constant="15" id="slN-gI-4WK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eKJ-lt-d9A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0bt-19-wCd"/>
+                            <constraint firstItem="eKJ-lt-d9A" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NeB-Q3-lWr"/>
+                            <constraint firstItem="eKJ-lt-d9A" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="f1o-Vb-Wdn"/>
+                            <constraint firstAttribute="bottom" secondItem="eKJ-lt-d9A" secondAttribute="bottom" id="oQH-cn-Tk2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="captureButton" destination="HID-tU-YhJ" id="hBU-ay-NqI"/>
+                        <outlet property="capturePreviewView" destination="eKJ-lt-d9A" id="BCd-RV-n5z"/>
+                        <outlet property="libraryButton" destination="PRQ-he-Rj9" id="Vbg-RP-OH5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="album" width="256" height="256"/>
+        <image name="delete" width="225" height="225"/>
+    </resources>
+</document>
