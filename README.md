@@ -1,4 +1,10 @@
-Hello ! In order to fully replicate the results shown in the report, please follow these steps:
+#iFilter
+
+iFilter is an iOS application that allows one user to take a camera shot of a sneaker, segment the image into sneakers-background and apply filters to each of them independently. This project was realized as a self initiated project for the INF573 - Image Analysis and Computer Vision at Ecole Polytechnique. 
+
+The dataset was created by hand using LabelMe to create annotated mask images of sneakers. 
+
+I used the Unet architecture for segmentation as well as the Segnet.
 
 
 Step 1: Be sure to have all packages/softwares installed. 
@@ -24,13 +30,6 @@ Package:
 SwiftImage library
 Carthage
 
-
-Step 2: Reproduce the model building/training/conversion by running the Segmentation.ipynb
-The training dataset (295Dataset2) has been already formatted and ready to use for the Segmentation.ipynb.
-
-Step 3: Run the app by launching the iFilter .xcodeproj. You will need an iPhone.  If you do not want to run the app but only look at the code. I consider looking at the two main views. The ViewController.swift ( Capture View)  and the  SegmentationAlertView.swift ( Segmentation View) files.
-
-Thank you and hope you enjoy the application!
 
 
 
