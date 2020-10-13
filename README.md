@@ -6,8 +6,8 @@ The dataset was created by hand using LabelMe to create annotated mask images of
 
 I used the Unet architecture for segmentation as well as the Segnet.
 
-![Test Image 1](iFilter-2.png)
-![Test Image 1](iFilter-1.png)
+![Test Image 1](iFilter-2.png)<!-- .element height="50%" width="50%" -->
+![Test Image 1](iFilter-1.png)<!-- .element height="50%" width="50%" -->
 
 Step 1: Be sure to have all packages/softwares installed. 
 
